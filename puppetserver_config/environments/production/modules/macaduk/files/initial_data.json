@@ -1,0 +1,169 @@
+[
+{
+  "fields": {
+    "business_unit": 1,
+    "name": "Demo Group",
+    "key": "1gpdujztbs8upqx834fmb998pbulib6uxkz3lhtuw4sfj7mg3oftzc6ea2iux91qmn2b61easv3vdudgxasi6dlnriukt6do6nzwwe4rrs3lby2smf87b2akltd3qctv"
+  },
+  "model": "server.machinegroup",
+  "pk": 1
+},
+{
+  "fields": {
+    "console_user": null,
+    "munki_version": null,
+    "hd_space": null,
+    "machine_model": null,
+    "cpu_speed": null,
+    "serial": "VMVJT4IK9FV1",
+    "puppet_errors": 0,
+    "last_puppet_run": null,
+    "errors": 0,
+    "puppet_version": null,
+    "hostname": null,
+    "memory": null,
+    "memory_kb": 0,
+    "warnings": 0,
+    "install_log": null,
+    "first_checkin": "2016-01-01T11:37:04.272Z",
+    "last_checkin": null,
+    "hd_total": null,
+    "os_family": "Darwin",
+    "report": null,
+    "operating_system": null,
+    "machine_group": 1,
+    "sal_version": null,
+    "manifest": null,
+    "hd_percent": null,
+    "cpu_type": null,
+    "activity": null,
+    "install_log_hash": null
+  },
+  "model": "server.machine",
+  "pk": 1
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "Activity",
+    "order": 1
+  },
+  "model": "server.plugin",
+  "pk": 1
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "Status",
+    "order": 2
+  },
+  "model": "server.plugin",
+  "pk": 2
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "OperatingSystem",
+    "order": 3
+  },
+  "model": "server.plugin",
+  "pk": 3
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "MunkiVersion",
+    "order": 4
+  },
+  "model": "server.plugin",
+  "pk": 4
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "Uptime",
+    "order": 5
+  },
+  "model": "server.plugin",
+  "pk": 5
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "Memory",
+    "order": 6
+  },
+  "model": "server.plugin",
+  "pk": 6
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "DiskSpace",
+    "order": 7
+  },
+  "model": "server.plugin",
+  "pk": 7
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "PendingAppleUpdates",
+    "order": 8
+  },
+  "model": "server.plugin",
+  "pk": 8
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "Pending3rdPartyUpdates",
+    "order": 9
+  },
+  "model": "server.plugin",
+  "pk": 9
+},
+{
+  "fields": {
+    "type": "facter",
+    "name": "PuppetStatus",
+    "order": 10
+  },
+  "model": "server.plugin",
+  "pk": 10
+},
+{
+  "fields": {
+    "name": "historical_retention",
+    "value": "180"
+  },
+  "model": "server.salsetting",
+  "pk": 1
+},
+{
+  "fields": {
+    "public_key": "shydqv8payyfn0ae5z42twiy",
+    "private_key": "7uplgd3hag4y9ho8y0v96wytut7q4tu41a0qx317s1gp9r3rgtf5lojxnofxu2df",
+    "has_been_seen": true,
+    "name": "Puppet Server"
+  },
+  "model": "server.apikey",
+  "pk": 1
+},
+{
+  "fields": {
+    "user": 1,
+    "level": "GA"
+  },
+  "model": "server.userprofile",
+  "pk": 1
+},
+{
+  "fields": {
+    "name": "MacAD.UK Demo",
+    "users": []
+  },
+  "model": "server.businessunit",
+  "pk": 1
+}
+]

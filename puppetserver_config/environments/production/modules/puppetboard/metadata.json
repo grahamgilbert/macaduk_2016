@@ -1,0 +1,49 @@
+{
+  "project_page": "https://github.com/nibalizer/puppet-module-puppetboard",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 3.0.0"
+    },
+    {
+      "name": "stankevich/python",
+      "version_requirement": ">= 1.1.4"
+    },
+    {
+      "name": "puppetlabs/vcsrepo",
+      "version_requirement": ">= 0.1.2"
+    }
+  ],
+  "author": "Spencer Krum",
+  "checksums": {
+    "README.md": "44588b24389ae48ae5a208a373c2009e",
+    "spec/acceptance/class_spec.rb": "18a168fdb51674b23ca738ed291adefb",
+    "spec/acceptance/nodesets/centos-64-x64.yml": "092dd2c588a9f87fa1fb12997c0723ef",
+    "Gemfile": "5503d8a77374d86c5155b9de89e4f65a",
+    "templates/apache/conf.erb": "3c4d046507662f70180b51d077e6377a",
+    "manifests/params.pp": "2ebcf8675dd5fa27f960c8e4210e2ff9",
+    "spec/spec_helper_acceptance.rb": "52a5d9f050c4bd6f42c1485278a05ec3",
+    "Modulefile": "2f9b944606e532f898d96206885ad516",
+    "manifests/apache/conf.pp": "372fcd0dcb9caaf566583ef7025cd969",
+    "manifests/apache/vhost.pp": "020ae0718969a8fb52d11d4bcd6b4a8a",
+    "manifests/init.pp": "7d363a41c7033000bd1d5f58d8bf225b",
+    "templates/settings.py.erb": "51ff55cb28ec3d5af274cfc9cc362151",
+    "Gemfile.lock": "0e97d524b3a11af754f3520d79b363e1",
+    "spec/acceptance/nodesets/default.yml": "d30d73e34cd50b043c7d14e305955269",
+    "Rakefile": "a833e33c54aa21485be54e16091e67d1",
+    "templates/wsgi.py.erb": "2143eeb3315035ce8f866ad611f12b95",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "LICENSE.md": "d82b57d320f95be9ad8a38eb59579823",
+    "Changelog.txt": "8fd328e4f718fe57c699669043c57bf9",
+    "tests/init.pp": "1c98af1fcb0cbd0722a927fe790d85fd"
+  },
+  "license": "ASL 2.0",
+  "version": "2.5.0",
+  "summary": "Install and configure PuppetBoard",
+  "description": "Install and configure PuppetBoard",
+  "types": [
+
+  ],
+  "source": "git://github.com/nibalizer/puppet-module-puppetboard.git",
+  "name": "nibalizer-puppetboard"
+}

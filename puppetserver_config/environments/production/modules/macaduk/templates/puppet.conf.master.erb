@@ -1,0 +1,15 @@
+[main]
+environmentpath=$codedir/environments
+
+[master]
+autosign       = /sal_cert.py
+reports        = puppetdb,store
+node_terminus  = plain
+ca             = true
+ssldir         = /etc/puppetlabs/puppet/ssl
+certname       = puppet.grahamgilbert.dev
+parser         = current
+storeconfigs   = true
+storeconfigs_backend = puppetdb
+strict_variables = false
+environmentpath = $codedir/environments
