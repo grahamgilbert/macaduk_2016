@@ -2,9 +2,6 @@
 :backends:
   - yaml
 :hierarchy:
-  - "nodes/%{::trusted.certname}"
-  - "sites/%{::site}/%{::build}"
-  - "builds/%{:::build}"
   - "sites/%{::site}"
   - "%{::osfamily}"
   - common
