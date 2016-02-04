@@ -68,33 +68,33 @@ Vagrant.configure(2) do |config|
         puppet.binary_path = "/opt/puppetlabs/bin"
       end
   end
-  #
-  # config.vm.define "client2" do |client2|
-  #     # You will need to make your own OS X box.
-  #     # See https://github.com/chilcote/vfuse/wiki/Vagrant
-  #     client2.vm.box = "darwin-1011"
-  #     client2.ssh.insert_key = false
-  #     client2.vm.provider "vmware_fusion" do |v|
-  #           v.gui = true
-  #           v.vmx["memsize"] = "4096"
-  #           v.vmx["numvcpus"] = "2"
-  #           v.vmx["SMBIOS.use12CharSerialNumber"] = "TRUE"
-  #           v.vmx["serialNumber"] = "VMVJT4IK9FV2"
-  #     end
-  #     client2.vm.network "private_network"
-  #     client2.vm.hostname = "client2.grahamgilbert.dev"
-  #     client2.vm.provision "shell", inline: <<-SHELL
-  #       sudo scutil --set HostName client2.grahamgilbert.dev
-  #       sudo scutil --set ComputerName client2.grahamgilbert.dev
-  #       sudo scutil --set LocalHostName client2
-  #     SHELL
-  #
-  #     client2.vm.provision "puppet" do |puppet|
-  #       puppet.environment = "production"
-  #       puppet.environment_path = "environments"
-  #       puppet.binary_path = "/opt/puppetlabs/bin"
-  #     end
-  # end
+
+  config.vm.define "client2" do |client2|
+      # You will need to make your own OS X box.
+      # See https://github.com/chilcote/vfuse/wiki/Vagrant
+      client2.vm.box = "darwin-1011"
+      client2.ssh.insert_key = false
+      client2.vm.provider "vmware_fusion" do |v|
+            v.gui = true
+            v.vmx["memsize"] = "4096"
+            v.vmx["numvcpus"] = "2"
+            v.vmx["SMBIOS.use12CharSerialNumber"] = "TRUE"
+            v.vmx["serialNumber"] = "VMVJT4IK9FV2"
+      end
+      client2.vm.network "private_network"
+      client2.vm.hostname = "client2.grahamgilbert.dev"
+      client2.vm.provision "shell", inline: <<-SHELL
+        sudo scutil --set HostName client2.grahamgilbert.dev
+        sudo scutil --set ComputerName client2.grahamgilbert.dev
+        sudo scutil --set LocalHostName client2
+      SHELL
+
+      client2.vm.provision "puppet" do |puppet|
+          puppet.environment = "production"
+          puppet.environment_path = "puppetserver_config/environments"
+          puppet.binary_path = "/opt/puppetlabs/bin"
+      end
+  end
 
   # config.vm.define "client3" do |client3|
   #     # You will need to make your own OS X box.

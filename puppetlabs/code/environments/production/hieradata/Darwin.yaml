@@ -5,14 +5,14 @@ classes:
   # - macaduk_demo::admin_user
   # - macaduk_demo::time_zone
   # - macaduk_demo::wallpaper
-  # - mac_admin::munki
-  # - mac_admin::munki::munkitools
+  # - munki
   # - sal_client
 
 # macaduk_demo::wallpaper::motivate: false
 
-# mac_admin::munki::repourl: http://192.168.33.10
-# mac_admin::munki::clientidentifier: macaduk
+# munki::repourl: http://192.168.33.10
+# munki::clientidentifier: macaduk
+# munki::install_tools: true
 
 # sal_client::key: 1gpdujztbs8upqx834fmb998pbulib6uxkz3lhtuw4sfj7mg3oftzc6ea2iux91qmn2b61easv3vdudgxasi6dlnriukt6do6nzwwe4rrs3lby2smf87b2akltd3qctv
 # sal_client::server: "http://192.168.33.10:8000"
