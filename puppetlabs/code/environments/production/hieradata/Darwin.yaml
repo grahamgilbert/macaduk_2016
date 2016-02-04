@@ -5,6 +5,7 @@ classes:
   # - macaduk_demo::admin_user
   # - macaduk_demo::time_zone
   # - macaduk_demo::wallpaper
+  # - macaduk_demo::outset
   # - munki
   # - sal_client
 

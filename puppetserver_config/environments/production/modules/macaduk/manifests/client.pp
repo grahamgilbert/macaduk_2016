@@ -52,7 +52,7 @@ class macaduk::client {
     file {'/private/etc/paths.d':
         ensure => 'directory',
     }
-    
+
     file {'/private/etc/paths.d/puppet':
         ensure  => 'present',
         content => '/opt/puppetlabs/bin',
@@ -74,12 +74,6 @@ class macaduk::client {
             ensure  => 'present',
             content => 'site=london'
         }
-    }
-
-    package { 'outset':
-        ensure   => installed,
-        provider => pkgdmg,
-        source   => 'https://github.com/chilcote/outset/releases/download/v1.0.1/outset-1.0.1.pkg',
     }
 
     service { 'mcollective':
