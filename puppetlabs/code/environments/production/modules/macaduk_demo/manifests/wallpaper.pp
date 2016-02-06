@@ -16,7 +16,10 @@ class macaduk_demo::wallpaper (
 
 
     if $macaduk_demo::wallpaper::motivate == true {
-        file {'/Library/Management/Wallpaper/motivate.jpg':
+        
+        $path = '/Library/Management/Wallpaper/motivate.jpg'
+
+        file {"${path}":
             ensure => present,
             source => 'puppet:///modules/macaduk_demo/wallpaper/motivate.jpg',
             mode   => '0644',
@@ -24,22 +27,20 @@ class macaduk_demo::wallpaper (
             group  => '0',
         }
 
-        $path = '/Library/Management/Wallpaper/motivate.jpg'
-
     } else {
-        file {'/Library/Management/Wallpaper/corp_wallpaper.jpg':
+
+        $path = '/Library/Management/Wallpaper/corp_wallpaper.jpg'
+
+        file {"${path}":
             ensure => present,
             source => 'puppet:///modules/macaduk_demo/wallpaper/corp_wallpaper.jpg',
             mode   => '0644',
             owner  => '0',
             group  => '0',
         }
-
-        $path = '/Library/Management/Wallpaper/corp_wallpaper.jpg'
     }
 
     # Template consumes $path variable
-    
     mac_profiles_handler::manage { 'com.company.wallpaper':
         ensure      => 'present',
         type        => 'template',

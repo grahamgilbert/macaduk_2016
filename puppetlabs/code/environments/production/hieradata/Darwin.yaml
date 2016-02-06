@@ -9,7 +9,7 @@ classes:
   # - munki
   # - sal_client
 
-# macaduk_demo::wallpaper::motivate: false
+macaduk_demo::wallpaper::motivate: false
 
 # munki::repourl: http://192.168.33.10
 # munki::clientidentifier: macaduk
