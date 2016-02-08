@@ -18,6 +18,8 @@ Vagrant.configure(2) do |config|
 
       puppetserver.vm.hostname = "puppet.grahamgilbert.dev"
 
+      puppetserver.ssh.insert_key = false
+
     puppetserver.vm.synced_folder "puppetlabs/code", "/etc/puppetlabs/code", type: "rsync", rsync_args:["--verbose", "--archive", "--delete", "-z", "--copy-links", "--chmod=D2775,F777"]
     puppetserver.vm.synced_folder "docker/db", "/usr/local/initial_db", type: "rsync"
     puppetserver.vm.synced_folder "docker/munki", "/usr/local/docker/munki", type: "rsync"

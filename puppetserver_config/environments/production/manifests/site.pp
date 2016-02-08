@@ -148,6 +148,6 @@ node 'puppet.grahamgilbert.dev' {
 
 }
 
-node 'client1.grahamgilbert.dev', 'client2.grahamgilbert.dev', 'client3.grahamgilbert.dev'{
+node 'client1.grahamgilbert.dev', 'client2.grahamgilbert.dev' {
     class {'macaduk::client': }
 }
