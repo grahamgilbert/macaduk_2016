@@ -27,7 +27,7 @@ class munki::munkitools {
             subscribe   => Package['munki_tools']
         }
 
-        ##If we need to, touch the bootstrap file
+        # If we need to, touch the bootstrap file
         if $mac_admin::munki::bootstrap==true {
             exec {'munki-check':
                 command     => '/usr/bin/touch /Users/Shared/.com.googlecode.munki.checkandinstallatstartup',
