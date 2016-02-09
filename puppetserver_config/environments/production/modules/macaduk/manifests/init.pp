@@ -5,6 +5,12 @@ class macaduk {
         mode   => '0755',
     }
 
+    file {'/usr/local/bin/reset.sh':
+        ensure => 'present',
+        source => 'puppet:///modules/macaduk/clean_server.sh',
+        mode   => '0755',
+    }
+
     if !defined(File['/usr']){
         file {'/usr':
             ensure => 'directory',

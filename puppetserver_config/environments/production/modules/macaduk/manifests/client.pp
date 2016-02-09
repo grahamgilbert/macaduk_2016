@@ -90,4 +90,10 @@ class macaduk::client {
         ensure => 'stopped',
         enable => 'false',
     }
+
+    file {'/usr/local/bin/reset.sh':
+        ensure => 'present',
+        source => 'puppet:///modules/macaduk/clean_client.sh',
+        mode   => '0755',
+    }
 }
